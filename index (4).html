@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Live Experiences</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E0C14;
+    --plum:#1A0F2E;
+    --indigo:#283890;
+    --magenta:#C81E8F;
+    --red:#EA2433;
+    --paper:#F5F3EF;
+    --muted:#A79FBA;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  html{overflow-x:hidden;}
+  body{
+    background:
+      radial-gradient(ellipse 620px 520px at 50% 8%, rgba(200,30,143,0.28), transparent 60%),
+      radial-gradient(ellipse 700px 600px at 50% 0%, rgba(40,56,144,0.35), transparent 55%),
+      var(--ink);
+    color:var(--paper);
+    font-family:'Poppins',sans-serif;
+    display:flex;
+    justify-content:center;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  .page{
+    width:100%;
+    max-width:460px;
+    padding:56px 24px 64px;
+    position:relative;
+  }
+
+  header{text-align:center;}
+  .logo-wrap{
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+  .logo-svg{
+    width:min(280px, 74vw);
+    height:auto;
+    display:block;
+  }
+  .eyebrow{
+    margin-top:22px;
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:700;
+  }
+  .tagline{
+    margin-top:10px;
+    font-size:14.5px;
+    color:var(--muted);
+    line-height:1.5;
+  }
+  .tagline strong{color:var(--paper);font-weight:800;}
+
+  nav{
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  a.link{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:22px 24px;
+    background:rgba(150,90,160,0.14);
+    border:1px solid rgba(245,243,239,0.10);
+    border-radius:18px;
+    text-decoration:none;
+    color:var(--paper);
+    transition:border-color .18s ease, background .18s ease, transform .18s ease;
+  }
+  a.link:hover{
+    border-color:rgba(234,36,51,0.55);
+    background:rgba(150,90,160,0.22);
+    transform:translateY(-1px);
+  }
+  .link-text{display:flex;flex-direction:column;gap:5px;}
+  .link-title{font-family:'Poppins',sans-serif;font-weight:800;font-size:17px;}
+  .link-sub{font-size:13px;color:var(--muted);line-height:1.4;}
+  .arrow{font-size:18px;color:var(--muted);transition:transform .18s ease, color .18s ease;}
+  a.link:hover .arrow{transform:translateX(3px);color:var(--red);}
+
+  .plus{
+    position:absolute;
+    top:-9px;
+    right:-6px;
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    font-size:20px;
+    color:var(--red);
+    line-height:1;
+    pointer-events:none;
+  }
+
+  footer{
+    margin-top:52px;
+    text-align:center;
+  }
+  .footer-line{
+    font-size:12px;
+    color:var(--muted);
+    letter-spacing:0.03em;
+  }
+  .footer-email{
+    margin-top:6px;
+    font-size:12.5px;
+    color:var(--magenta);
+    font-weight:600;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="logo-wrap">
+      <svg class="logo-svg" viewBox="0 0 500 110" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="liveGrad" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#4B4FE0"/>
+            <stop offset="100%" stop-color="#C81E8F"/>
+          </linearGradient>
+        </defs>
+        <text x="250" y="76" text-anchor="middle" dominant-baseline="alphabetic"><tspan font-family="'Poppins', sans-serif" font-weight="800" font-size="62" letter-spacing="-1" fill="#F5F3EF">fuel</tspan><tspan font-family="'Dancing Script', cursive" font-weight="700" font-size="76" fill="url(#liveGrad)" dx="6">live</tspan></text>
+      </svg>
+    </div>
+    <div class="eyebrow">Concerts · Festivals · Culture</div>
+    <div class="tagline">
+      Bangalore live events &amp; artist management<br>
+      From the house of <strong>Fuel India</strong>
+    </div>
+  </header>
+
+  <nav>
+    <a class="link" href="mailto:fuellive@fuelindia.co.in?subject=Corporate%20Event%20Enquiry" target="_blank" rel="noopener">
+      <span class="plus">+</span>
+      <span class="link-text">
+        <span class="link-title">Corporate Event Enquiries</span>
+        <span class="link-sub">Artist bookings for corporate shows &amp; strategic meets</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="mailto:fuellive@fuelindia.co.in?subject=Artist%20Booking%20Enquiry" target="_blank" rel="noopener">
+      <span class="plus">+</span>
+      <span class="link-text">
+        <span class="link-title">Book an Artist</span>
+        <span class="link-sub">Bands, DJs &amp; independent acts on our roster</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://instagram.com/fuelliveexp" target="_blank" rel="noopener">
+      <span class="plus">+</span>
+      <span class="link-text">
+        <span class="link-title">Follow on Instagram</span>
+        <span class="link-sub">@fuelliveexp — shows, artists, behind the scenes</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="#" target="_blank" rel="noopener">
+      <span class="plus">+</span>
+      <span class="link-text">
+        <span class="link-title">Fuel India</span>
+        <span class="link-sub">Our parent company — corporate events, pan-India</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+  </nav>
+
+  <footer>
+    <div class="footer-line">Live Experiences. Unforgettable Memories.</div>
+    <div class="footer-email">fuellive@fuelindia.co.in</div>
+  </footer>
+</div>
+</body>
+</html>
